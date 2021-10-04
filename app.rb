@@ -17,4 +17,8 @@ get '/kirstie' do
   "This is Kirstie's route"
 end
 
+get '/cat' do
+  @cat_name = ["Amigo", "Misty", "Almond"].sample 
+  erb(:index)
+end
 
